@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="ico/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="math-quiz">
+        <div class="points-container">
+            <div class="points-box">
+              <p id="point-el" class="points">Current: 0 pts</p>
+            </div>
+            <div class="toggle">
+                <i class="far fa-sun"></i>
+              </div>
+            <div class="points-box">
+              <p id="highscore-el" class="points">High Score: 0 pts</p>
+            </div>
+          </div>
+    
+          <div class="quiz">
+            <div class="title">
+              <h1 class="title-text" id="title-text">Math Quiz</h1>
+            </div>
+            <div class="expression">
+              <p class="exp" id="num1">?</p>
+              <p class="exp" id="op">+</p>
+              <p class="exp" id="num2">?</p>
+            </div>
+            <p id="error-el" class="error-msg"></p>
+            <div class="user-input">
+              <input type="text" id="answer-el" class="input-answer" />
+              <div class="buttons">
+                <button id="next-btn" class="btn-style" onclick="next()">
+                  Next
+                </button>
+                <button id="skip-btn" class="btn-style" onclick="skip()">
+                  Skip
+                </button>
+    
+                <button id="start-btn" class="btn-style" onclick="start()">
+                  Start
+                </button>
+                <button id="stop-btn" class="btn-style" onclick="stop()">
+                  Stop
+                </button>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
